@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Airplane James Farr</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <!-- Use a reset file to get rid of margins for the nav bar -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- JavaScript for my Tabs to function -->
+    <script src="./js/tabs.js"></script>
+  </head>
+  <body>
+    <header>
+      <section class="top">
+        <!-- Logo (left Side of Page) -->
+        <img class="logo" src="./img/logo.png" alt ="logo" />
+        <!-- Nav Menu (Right Side of Page / Down 10px to match logo bottom)-->
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="#"><img src="./img/home-icon.png" alt="Home">Home</a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/deal-icon.png" alt="travel deals">Travel Deals</a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/schedule-icon.png" alt="flight schedule">Flight Schedule</a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/login-icon.png" alt="login">Register/Login</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <!-- Start Main Content Area *Info Box* -->
+    <main>
+      <!-- 3 Tab Menu With Icons Plane | Bed | Car -->
+      <!-- Use three buttons that make the site functional using javascript-->
+      <section class="tabs">
+          <!-- Use active class so first tab is open on
+          page load also changed #tab1 to display:block; -->
+              <button class="tablinks active" onclick="getTabs(event, 'tab1')">
+                <img src="./img/plane-icon.png" alt=""/>
+              </button>
+              <button class="tablinks" onclick="getTabs(event, 'tab2')">
+                <img src="./img/hotel-icon.png" alt=""/> </button>
+              <button class="tablinks" onclick="getTabs(event, 'tab3')">
+                <img src="./img/car-icon.png" alt=""/>
+            </button>
+      </section>
+      <!-- Input Box | 6 Inputs | 4 Rows | 1 Button
+          Row 1 - 2 Text Boxes Place holder Text Depart & Arrive
+          Row 2 - 2 Date Picker Boxes relaing to Depart & Arrive MM/DD/YYYY
+          Row 3 - Passenger Drop Box | 2 Radio Boxes Return / One Way
+          Row 4 - Search Flights button -->
+      <section id="tab1" class="tabcontent">
+        <form>
+          <input type="text" name="Depart" placeholder="Depart" />
+          <input type="text" name="Arrive" placeholder="Arrive" /> <br />
+          <input type="date">
+          <input type="date"> <br />
+          <!-- Create a drop down that starts with
+          automatticly selecting the first option -->
+          <span class="spantext">Passengers:</span>
+          <select name="passengers">
+           <option value="one">1</option>
+           <option value="two">2</option>
+           <option value="three">3</option>
+           <option value="four">4</option>
+          </select>
+          <!-- 1st radio checked 2nd not checked -->
+          <input type="radio" name="traveltype" value="return" checked> Return
+          <input type="radio" name="traveltype" value="one way"> One Way <br />
+          <input type="submit" value="Search Flights">
+        </form>
+      </section>
+      <section id="tab2" class="tabcontent">
+        Here is where hotel info would go!
+      </section>
+      <section id="tab3" class="tabcontent">
+        Here is where car rental info would go!
+      </section>
+    </main>
+  </body>
+</html>
