@@ -1,0 +1,88 @@
+body{
+  background-color: darkgrey;
+}
+main{
+  max-width: 1050px;
+  background-color: white;
+  margin: auto;
+  padding-bottom: 50px;
+  height: 1550px;
+}
+section{
+  text-align: left;
+  padding-left:20px;
+  padding-right:20px;
+}
+.box{
+
+  width: 1000px;
+  margin: 5px;
+  float: left;
+  background-color: lightgrey;
+  border-radius: 20px;
+
+}
+nav{
+  text-align: center;
+  font-family: 'Gugi', cursive;
+  text-shadow: .5px .5px #000000;
+  font-size: 22px;
+  background-color: #2d2929;
+  padding: 5px;
+
+}
+a:hover{
+  color: teal;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li{
+  display: inline-block;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:visited{
+  color:white;
+}
+li a:hover {
+  background-color: #111;
+}
+.blogtitle{
+  text-align: center;
+  color: #3d8a4b;
+
+}
+.date{
+  float:right;
+}
+.readmore{
+  float: left;
+}
+.featured{
+  background-color:lightblue;
+  color:white;
+}
+#featuredbox{
+  height: 150px;
+  width: 970px;
+  float: left;
+  background-color: lightblue;
+  margin-bottom: 10px;
+  color: black;
+}
+p{
+  font-family: 'Ubuntu', sans-serif;
+}
+p:hover:first-letter{
+  color: red;
+}
