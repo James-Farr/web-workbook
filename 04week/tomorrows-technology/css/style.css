@@ -1,0 +1,149 @@
+body{
+  margin: 0;
+}
+main{
+  margin: 8px;
+}
+@media (min-width: 992px) {
+  main{
+
+    margin-top: 100px;
+    margin-left: 70px;
+  }
+  .mainsection{
+    float:left;
+    width:900px;
+    display:inline-block;
+  }
+  .background{
+    width:900px;
+    height:500px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  p{
+    font-size: 20px;
+  }
+  .techbutton{
+    background-color: grey;
+    color:white;
+    width:100px;
+    height:30px;
+    padding-top:5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+  }
+  aside{
+    float:left;
+    padding-left:50px;
+    width: 300px;
+    height: auto;
+    margin: 0;
+  }
+  .rightaside{
+    visibility: visible;
+  }
+  .rightaside h1{
+    margin: 0;
+  }
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  .rightaside p{
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .background{
+    width:100%;
+    height:450px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  p{
+    font-size: 20px;
+  }
+  .techbutton{
+    background-color: grey;
+    color:white;
+    width:100px;
+    height:30px;
+    padding-top:5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+  }
+
+}
+@media (max-width: 992px) {
+  .rightaside{
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+.container{
+
+    visibility: hidden;
+}
+
+}
+@media (max-width: 576px) {
+  .item {
+    width: 100%;
+    margin-left:20px !important;
+    color:white;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .container div {
+    flex: 0 44%;
+    box-sizing:border-box;
+    background-color:grey;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer{
+    background-color:grey;
+    width:100%;
+  }
+  .background{
+    width:100%;
+    height:200px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  p{
+    font-size: 20px;
+  }
+  .item p{
+    font-size: 16px;
+    margin: 0;
+  }
+  .techbutton{
+    background-color: grey;
+    color:white;
+    width:100px;
+    height:30px;
+    padding-top:5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+  }
+}
