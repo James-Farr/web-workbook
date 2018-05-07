@@ -1,0 +1,57 @@
+main{
+  width:850px;
+  height:1000px;
+  margin: 0 auto;
+}
+.maintop{
+  display: box;
+  display: flex;
+  box-align: center;
+  align-items: center;
+  box-pack: center;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+.mainimg{
+  width:850px;
+  height: 450px;
+  position: relative;
+}
+.maintop h1{
+  position: absolute;
+  font-size: 100px;
+  color:white;
+  margin: 0;
+}
+.mainbottom{
+  width:850px;
+  height: 324px;
+  background-color: lightgrey;
+}
+.flex-grid {
+  display: flex;
+}
+.col {
+  flex: 1;
+  padding: 20px;
+}
+p{
+  line-height: 25px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+#subject{
+  height:80px !important;
+}
+input[type=submit]{
+  width: 70px;
+  height: 35px;
+  background-color: darkgrey;
+  color:white;
+}
