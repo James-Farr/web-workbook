@@ -1,1 +1,132 @@
 
+.box {
+  background: #eeeeee;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+p{
+  margin: 0;
+  margin-left: 10px;
+
+}
+.button{
+  width: 75px;
+  height: 50px;
+  color:red;
+  float: right;
+  display: flex;
+  position: relative;
+  bottom 0;
+  flex: 1;
+}
+.box1 {
+  grid-area: box1;
+  height: auto;
+}
+
+.box2 {
+  grid-area: box2;
+  height: auto;
+}
+
+.box3 {
+  grid-area: box3;
+    height: auto;
+}
+
+.box4 {
+  grid-area: box4;
+    height: auto;
+}
+
+.box5 {
+  grid-area: box5;
+    height: auto;
+}
+
+.box6 {
+  grid-area: box6;
+    height: auto;
+}
+
+.box7 {
+  grid-area: box7;
+    height: auto;
+  width: 100%;
+}
+
+.box8 {
+  grid-area: box8;
+    height: auto;
+}
+.box9 {
+  grid-area: box9;
+    height: auto;
+}
+.box10 {
+  grid-area: box10;
+    height: auto;
+}
+.img-box{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.img-box2{
+  display: block;
+  float: left;
+  padding-right: 10px;
+}
+
+/* Extra Small and up (Portrait Phones) */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7"
+    "box8"
+    "box9"
+    "box10";
+}
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "box1 box1"
+      "box2 box3"
+      "box4 box5"
+      "box6 box6"
+      "box7 box8"
+      "box9 box10";
+  }
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "box1 box1 box2 box2"
+      "box3 box3 box4 box5"
+      "box3 box3 box6 box6"
+      "box7 box8 box9 box10";
+  }
+
+}
